@@ -10,7 +10,9 @@
     <h1 class="mt-5"> <i class="fa fa-music" aria-hidden="true"></i> Browse All Songs:</h1>
     <ul>
         {% for song in songs %}
-          <li>{{song}}</li>
+          <h3>{{song.name}}</h3>
+          <p>{{song.year}}</p>
+          <p>{{song.artist_name}}</p>
         {% endfor%}
     </ul>
 
